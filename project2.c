@@ -110,25 +110,54 @@
 // 小端(存储)模式：数据的低地址保存在內存中的低地址中，反之一样
 
 //写一个程序判断当前机器的字节序
-int check_sys()
-{
-	int a = 1;
-	//int* p = (char*)&a;
-	//返回1表示小段
-	//返回0表示大端
-	return *(char*)&a;
-}
+//int check_sys()
+//{
+//	int a = 1;
+//	//int* p = (char*)&a;
+//	//返回1表示小段
+//	//返回0表示大端
+//	return *(char*)&a;
+//}
+//
+//int main()
+//{
+//	int ret = check_sys();
+//	if (ret == 1)
+//	{
+//		printf("小端\n");
+//	}
+//	else
+//	{
+//		printf("大端\n");
+//	}
+//	return 0;
+//}
 
-int main()
-{
-	int ret = check_sys();
-	if (ret == 1)
-	{
-		printf("小端\n");
-	}
-	else
-	{
-		printf("大端\n");
-	}
-	return 0;
-}
+//7_13
+// char取值范围是-128 -- 127,unsigned char是0 -- 255
+//做题
+//1.
+//int main()
+//{
+//	char a[1000];
+//	int i;
+//	for (i = 0; i < 1000; i++)
+//	{
+//		a[i] = -1 - i;
+//	}
+//	printf("%d", strlen(a));
+// return 0;
+//}
+
+//2.
+//int main()
+//{
+//	unsigned char i = 0;
+//	for (i = 0; i <= 255; i++)
+//	{
+//		printf("Hello,World\n");
+//	}
+//	return 0;
+//}
+
+//浮点数家族包括float,double,long double 
