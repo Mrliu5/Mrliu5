@@ -1,6 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 
+//www.stackoverflow.com
+//www.segmentfault.com
+
 //系统內存开辟 :
 
 //栈区 :	局部变量
@@ -14,7 +17,7 @@
 //
 //静态区 :	全局变量
 //			静态变量
-	
+
 
 //struct 结构体关键字  stu - 结构体标签  struct stu - 结构体类型 
 //struct stu
@@ -121,7 +124,7 @@
 //
 //int main()
 //{
-//	int ret = check_sys();
+//	int ret=check_sys();
 //	if (ret == 1)
 //	{
 //		printf("小端\n");
@@ -160,4 +163,69 @@
 //	return 0;
 //}
 
+//7_14
 //浮点数家族包括float,double,long double 
+// 说明整型和浮点型存储方式不同
+//int main()
+//{
+//	int n = 9;
+//	//补码00000000 00000000 00000000 00001001
+//	//浮点数存储0 00000000 00000000000000000001001
+//
+//	float* pfloat = (float*)&n;
+//	printf("%d\n", n);
+//	printf("%f\n", *pfloat);
+//	//(-1)^0 * 00000000000000000001001^-126    ---0
+//	
+//	* pfloat = 9.0;
+//	//1001
+//	//(-1)^0 * 1.001 * 2^3   E=3+127=130
+//	//0 10000010 00100000000000000000000
+//	
+//	printf("%d\n", n);
+//	//转为整型01000000 10001000 00000000 00000000  --1091,567,616
+//	printf("%f\n", *pfloat);
+//	return 0;
+//}
+
+//科学计数法(-1)^s * M * 2^E 
+//s=0为正,1为负
+//float类型E要加上127,double加1023
+
+//int main()
+//{
+//	float f = 5.5;
+//	//二进制101.1
+//	//(-1) ^ 0 * 1.011 * 2 ^ 2
+//	//s = 0
+//	//M = 1.011
+//	//E = 2
+//	//0 10000001 01100000000000000000000000
+//	//1个符号位 8个存E 23个存M
+//	return 0;
+//}
+
+//32位电脑是4个字节,指针大小为4；
+//64位电脑是8个字节,指针大小为8;
+//void test(int arr[])
+//{
+//	printf("%d", sizeof(arr) / sizeof(arr[0]));
+//}
+//
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	test(arr);
+//	return 0;
+//}
+
+//int main()
+//{
+//	//const可以修饰常量
+//	const char* p = "abcdef";//"abcdef"是一个常量字符串
+//	//p存的是首地址a
+//
+//	printf("%c\n", *p);
+//	printf("%s\n", p);
+//	return 0;
+//}
