@@ -229,3 +229,74 @@
 //	printf("%s\n", p);
 //	return 0;
 //}
+
+//7_30
+
+//int main()
+//{
+//	char arr1[] = { "hello wangdefa" };
+//	char arr2[] = { "hello wangdefa" };
+//	char* p1 = { "hello wangdefa" }; //因为char*大小为4，字符串大小为7，放不下所以把字符串看作常量
+//	char* p2 = { "hello wangdefa" };
+//	if (arr1 == arr2)
+//	{
+//		printf("hehe ");
+//	}
+//	else
+//	{
+//		printf("haha ");
+//	}
+//	if (p1 == p2)
+//	{
+//		printf("hehe ");
+//	}
+//	else
+//	{
+//		printf("haha ");
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int arr1[] = {1,2,3,4,5};
+//	int arr2[] = {2,3,4,5,6};
+//	int arr3[] = {3,4,5,6,7};
+//	int* parr[] = {arr1,arr2,arr3};
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("%d ", *(parr[i]+j));
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//牛客汽水瓶--做错了
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int n = 0;
+//	while (scanf("%d", &n))
+//	{
+//
+//		a += n / 3;
+//		b = n % 3;
+//		n = n/3 + b;
+//		if (n <= 1)
+//		{
+//			printf("%d ", a);
+//		}
+//		else if (n == 2)
+//		{
+//			printf("%d ", a+1);
+//		}
+//	}
+//	
+//	return 0;
+//} 
