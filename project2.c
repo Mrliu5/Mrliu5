@@ -29,7 +29,7 @@
 //}s1, s2, s3;//s1,s2,s3是三个全局的结构体变量
 
 ////typedef - 重新定义名字
-//typedef struct stu
+//typedef struct stu  
 //{
 //	char 名字[20];
 //	short 年龄;
