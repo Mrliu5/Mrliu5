@@ -23,7 +23,7 @@
 //struct stu
 //{
 //	char 名字[20];
-//	short 年龄;
+//	short 年龄; 
 //	char 电话[12];
 //	char 性别[5];
 //}s1, s2, s3;//s1,s2,s3是三个全局的结构体变量
